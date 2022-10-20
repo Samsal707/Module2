@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+
+#flyer{
+    background-color: whitesmoke;
+    width: width-max;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(121, 130, 216);
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 1em;
+}
+
+
+
+form{
+    background-color: whitesmoke;
+    width: auto;
+    padding-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 25%;
+    border-radius: 15px;
+}
+
+h1,header{
+    text-align: center;
+}
+
+#name{
+    padding-top: 5%;
+    border-radius: 7px;
+    width: 100%;
+    
+}
+
+#status{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2.5%;
+    margin-bottom: 5%;
+    padding: 2.5%;
+    width: 100%;
+    text-align: center;
+    border-radius: 7px;
+}
+label{
+    display: block;
+    margin-left: auto;
+    
+}
+
+#option{
+    margin-top: 10%;
+}
+
+#IOD{
+    margin-top: 10%;
+}
+
+#rad{
+    display:inline-block
+}
+
+#languages{
+    margin-top: 10%;
+}
+
+.demography{
+    margin-top: 5px;
+    width: 100%;
+    margin-left: auto;
+    margin-right:25px
+}
+
+textarea{
+    width: 100%;
+    margin-top: 2.5%;
+    padding: 0;
+}
+
+#submit{
+    width: 100%;
+    border-radius: 5px;
+    height: 50%;
+    padding: 5%;
+    margin-top: 10%;
+    background-color:#098159;
+    border: none;
+}
+
+
+footer{
+    margin-top: 10%;
+    margin-bottom:0;
+    text-align: center;
+}
+
+span{
+    font-style: italic;
+    font-size: 15px;
+}

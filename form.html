@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institute of Data Survey</title>
+    <link rel = "stylesheet" href = "formstyle.css">
+
+    <script language ="JavaScript">
+        function testResults (form) {
+            let formValue = []
+            var TestVar = form.querySelector("input", "select").value;
+            alert ("You typed: " + TestVar);
+        }
+    </script>
+
+    
+        
+</head>
+<body>
+    <header id = "flyer">Employee Survey</header>
+    
+    <h1>Institute of Data Survey</h1>
+    <form name = 'myform' method="POST" action="http://localhost:3000/profile">
+       <div>
+         <div>
+          <label id="name" for = "name" >Name</label>
+          <input id="name" name = "name" type = "text" class="demography" value = "" required>
+         </div>
+         <div>
+          <label id="name" for = "name" >Lastname</label>
+          <input id="name" name = "name" type = "text" class="demography" value = "" required>
+         </div>
+
+         <div>
+          <label id="name"for = "email">Email</label>
+           <input id="name"type = "email" name = "email" class="demography" required>
+         </div>
+        <div>
+          
+        <label id="name" for = "age" >Age</label>
+        <input id="name" type = "age" name = "age" class = "demography" >
+
+        <label id="option" for = "current status">Which option best describes you?</label>
+        <select id="status" name = 'current status'>
+            <option value = ''>---Please make a selection---</option>
+            <option value = 'Student'>Student</option>
+            <option value = 'Graduate'>Graduate</option>
+            <option value = 'Employed'>Employed</option>
+            <option value = 'Unemployed'>Unemployed</option>
+            <option value = 'Business Owner'>Business Owner</option>
+        </select>
+
+        <div>
+            <label id = "IOD" for = "IOD">Would you recommend Institute to a friend?</label>
+            <input type="radio" id="Yes" name ="IOD" value="Yes"
+             checked>
+            <label id = "rad" for="Yes">Yes</label>
+        </div>
+        <div>
+            <input type="radio" id="No" name="IOD" value="No">
+            <label id = "rad" for="Yes">No</label>
+        </div>
+        <div>
+            <input type="radio" id="Maybe" name="IOD" value="Maybe">
+            <label id = "rad" for="Maybe">Maybe</label>
+        </div>
+
+          <div>
+            <label id = "languages" for = "Languages and Frameworks">Languages and Frameworks Known</label>
+            <input type="checkbox" id="Languages and Frameworks" name="C" checked>
+            <label id = "rad" for="C">C</label>
+          </div>
+      
+          <div>
+            <input type="checkbox" id="Languages and Frameworks" name="C++">
+            <label id = "rad" for="C++">C++</label>
+          </div>
+        <div>
+            <input type="checkbox" id="Languages and Frameworks" name="JavaScript" checked>
+            <label id = "rad" for="JavaScript">JavaScript</label>
+        </div>
+        <div>
+            <input type="checkbox" id="Languages and Frameworks" name="React">
+            <label id = "rad" for="React">React</label>
+        </div>
+          
+        
+          <label id="name" for="suggestions or comments">Any comments or suggestions?</label>
+          <textarea id="name" name="suggestions or comments" rows="5" cols="33">
+          </textarea>
+
+          <div>
+            <input id= "submit" type ="submit" name ="button" Value ="submit" onClick="testResults(this.form)">
+          </div>
+
+       </div>
+        
+    </form>
+    <footer>
+        <img src="https://www.w3schools.com/images/lamp.jpg" alt="Lamp" width="20" height="20">
+
+        <span>&copy 2022 Lighting Productions</span>
+
+    </footer>
+</body>
+   
+</html>
